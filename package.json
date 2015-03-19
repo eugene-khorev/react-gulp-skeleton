@@ -1,0 +1,32 @@
+{
+  "name": "metro",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "browser-sync": "~2.3.1",
+    "gulp": "~3.8.11",
+    "gulp-clean": "~0.3.1",
+    "gulp-concat": "~2.5.2",
+    "gulp-csso": "~1.0.0",
+    "gulp-jshint": "~1.9.2",
+    "gulp-uglify": "~1.1.0"
+  },
+  "devDependencies": {
+    "es5-shim": "~4.1.0",
+    "html5shiv": "~3.7.2",
+    "gulp-swig": "~0.7.4",
+    "gulp-watch": "~4.2.0",
+    "gulp-htmlmin": "~1.1.1",
+    "gulp-react": "~3.0.1",
+    "react": "~0.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/var/git/repos/metro"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
