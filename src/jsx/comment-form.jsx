@@ -10,7 +10,7 @@ var CommentForm = React.createClass({
       return;
     }
 
-    Actions.commentAdded.trigger({ author: author, text: text });
+    CommentActions.commentAdded.trigger({ author: author, text: text });
 
     this.refs.author.getDOMNode().value = '';
     this.refs.text.getDOMNode().value = '';

@@ -1,7 +1,7 @@
 var CommentBox = React.createClass({
 
   componentDidMount: function() {
-    this.unsubscribe = commentStore.listen(this.onCommentAdded);
+    this.unsubscribe = commentStore.listen(this.handleCommentAdded);
   },
 
   componentWillUnmount: function() {
@@ -12,7 +12,7 @@ var CommentBox = React.createClass({
     return { data: commentStore.comments };
   },
 
-  onCommentAdded: function(comment) {
+  handleCommentAdded: function(comment) {
     this.setState({ data: commentStore.comments });
   },
 

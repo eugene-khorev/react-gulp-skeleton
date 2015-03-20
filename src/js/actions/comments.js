@@ -1,3 +1,3 @@
-var Actions = Reflux.createActions([
+var CommentActions = Reflux.createActions([
   'commentAdded',
 ]);
