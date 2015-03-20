@@ -8,7 +8,7 @@ var CommentList = React.createClass({
         </Comment>
       );
     });
-    
+
     return (
       <div className="commentList">
         { commentNodes }

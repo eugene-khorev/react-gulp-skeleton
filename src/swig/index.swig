@@ -5,5 +5,5 @@
 
   {% include "./partials/message.swig" %}
 
-  <div id="content" data-comments="{{ comments | json }}"></div>
+  <div id="content"></div>
 {% endblock %}

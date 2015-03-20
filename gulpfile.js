@@ -46,13 +46,13 @@ gulp.task('styles', ['clean-styles'], function (cb) {
 });
 
 gulp.task('tags', ['clean-scripts'], function (cb) {
-  return gulp.src(['./src/jsx/*.jsx'])
+  return gulp.src(['./src/jsx/**/*.jsx'])
     .pipe(react())
     .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('scripts', ['tags'], function (cb) {
-  var task = gulp.src(['./node_modules/reflux/dist/reflux.js', './node_modules/react/dist/react.js', './src/js/actions/*.js', './src/js/stores/*.js', './build/js/*.js', './src/js/*.js'])
+  var task = gulp.src(['./node_modules/reflux/dist/reflux.js', './node_modules/react/dist/react.js', './src/js/actions/*.js', './src/js/stores/*.js', './build/js/**/*.js', './src/js/*.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./build/js'));
 
