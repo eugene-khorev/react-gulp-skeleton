@@ -18,6 +18,12 @@
     {% include "../partials/main-menu.swig" %}
   </header>
   
+  {% block data %}
+    <script>
+      var data = {% autoescape false %}{{ data | json }}{% endautoescape %};
+    </script>
+  {% endblock %}
+
   {% block content %}{% endblock %}
 
   <script type="application/javascript" src="js/all.js"></script>

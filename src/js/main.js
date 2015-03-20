@@ -1,1 +1,3 @@
-initCommentBox();
+(function(){
+  initCommentBox();
+})();

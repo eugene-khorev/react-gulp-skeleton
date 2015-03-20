@@ -52,7 +52,7 @@ gulp.task('tags', ['clean-scripts'], function (cb) {
 });
 
 gulp.task('scripts', ['tags'], function (cb) {
-  var task = gulp.src(['./node_modules/react/dist/react.js', './build/js/*.js', './src/js/*.js'])
+  var task = gulp.src(['./node_modules/reflux/dist/reflux.js', './node_modules/react/dist/react.js', './src/js/actions/*.js', './src/js/stores/*.js', './build/js/*.js', './src/js/*.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./build/js'));
 

@@ -1,13 +1,15 @@
 {
   "page": "Main template",
-  "comments": [
-    {
-      "author": "Pete Hunt",
-      "text": "This is one comment"
-    },
-    {
-      "author": "Jordan Walke",
-      "text": "This is *another* comment"
-    }
-  ]
+  "data": {
+    "comments": [
+      {
+        "author": "Pete Hunt",
+        "text": "This is one comment"
+      },
+      {
+        "author": "Jordan Walke",
+        "text": "This is *another* comment"
+      }
+    ]
+  }
 }
